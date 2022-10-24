@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styling.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/themes/light.css"
+    />
+    <title>LEVI Turntable Product Page - A Levitating Turntable</title>
+  </head>
+
+  <body>
+    <!-- NAVIGATION BAR -->
+    <div id="navbar">
+      <div id="navlogo">
+        <a href="#home">
+          <img
+            id="toplogo"
+            src="images/hk-logo.png"
+            alt="Harman Kardon Logo black"
+            height="16px"
+        /></a>
+      </div>
+      <a href="#contact">Contact</a>
+      <a href="#specs">Specs</a>
+      <a href="#home">Home</a>
+    </div>
+    <!-- REFERENCE: hide and show nav bar from w3schools - https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp -->
+
+    <!-- //////////////////////START SECTION 1/////////////////////// -->
+
+    <div id="section-1">
+      <video
+        class="video"
+        playsinline="true"
+        webkit-playsinline="true"
+        preload="auto"
+        muted="muted"
+      >
+        <source src="./animations/trim11.mp4" type="video/mp4" />
+      </video>
+      <!-- bouncing arrow section 1 -->
+      <div class="arrow"><sl-icon name="arrow-down"></sl-icon></div>
+    </div>
+    <!-- //////////////////////START SECTION 2/////////////////////// -->
+    <div id="section-2">
+    <video
+      class="video2"
+      playsinline="true"
+      webkit-playsinline="true"
+      preload="auto"
+      muted="muted"
+    >
+      <source src="./animations/trim2.mp4" type="video/mp4" />
+    </video>
+  </div>
+    <!-- links scripts to html -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/shoelace.js"
+    ></script>
+    <script src="./scripts/ScrollTrigger.min.js"></script>
+    <script src="./scripts/gsap.min.js"></script>
+    <script src="mainjavascript.js"></script>
+  </body>
+</html>

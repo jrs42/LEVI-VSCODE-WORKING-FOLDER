@@ -1,0 +1,90 @@
+/* BASIC UNIVERSAL STYLING */
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+body {
+  background-color: #f1f1f1;
+}
+
+/* --------- navigation styling --------- */
+
+#navbar {
+  background-color: #dfdfdf;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
+/* Style the navbar links */
+#navbar a {
+  float: right;
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 27px 80px 27px 0px;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  color: white;
+}
+
+/* nav logo styling */
+
+#navlogo {
+  position: absolute;
+  margin-left: 43.7%;
+}
+
+/* 'Navbar' REFERENCE: hide and show nav bar from w3schools - https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp */
+
+/* ////////////////////// SECTION 1 START ////////////////////// */
+/* video styling */
+
+#section-1 {
+  margin-top: 70px;
+  width: 100vw;
+  height: 100vh;
+  /* margin-top accounts for the position: fixed navigation bar, preventing content from getting hidden under the navigation */
+}
+
+/* video styling */
+.video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* bouncing arrow section 1 */
+.arrow {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -20px;
+  animation: bounce 2.5s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+/* ////////////////////// SECTION 2 START ////////////////////// */
